@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/bennsimon/uptimerobot-operator/controllers"
+	"github.com/onaio/uptimerobot-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -69,7 +69,7 @@ func main() {
 		Port:                   9443,
 		HealthProbeBindAddress: probeAddr,
 		LeaderElection:         enableLeaderElection,
-		LeaderElectionID:       "b6c1f3bb.bennsimon.github.io",
+		LeaderElectionID:       "b6c1f3bb.onaio.github.io",
 		// LeaderElectionReleaseOnCancel defines if the leader should step down voluntarily
 		// when the Manager ends. This requires the binary to immediately end when the
 		// Manager is stopped, otherwise, this setting is unsafe. Setting this significantly

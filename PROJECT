@@ -1,12 +1,12 @@
-domain: bennsimon.github.io
+domain: onaio.github.io
 layout:
 - go.kubebuilder.io/v3
 projectName: uptimerobot-operator
-repo: github.com/bennsimon/uptimerobot-operator
+repo: github.com/onaio/uptimerobot-operator
 resources:
 - controller: true
-  domain: bennsimon.github.io
-  group: bennsimon.github.io
+  domain: onaio.github.io
+  group: onaio.github.io
   kind: Uptimerobot
   version: v1
 version: "3"

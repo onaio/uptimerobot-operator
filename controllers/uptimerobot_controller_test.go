@@ -3,7 +3,7 @@ package controllers
 import (
 	"context"
 	"errors"
-	"github.com/bennsimon/uptimerobot-operator/util/monitorutil"
+	"github.com/onaio/uptimerobot-operator/util/monitorutil"
 	"github.com/stretchr/testify/mock"
 	network "k8s.io/api/networking/v1"
 	"k8s.io/apimachinery/pkg/runtime"

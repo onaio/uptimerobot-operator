@@ -2,9 +2,9 @@ package monitorutil
 
 import (
 	"errors"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/model"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/service"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/service/monitor"
+	"github.com/onaio/uptimerobot-tooling/pkg/model"
+	"github.com/onaio/uptimerobot-tooling/pkg/service"
+	"github.com/onaio/uptimerobot-tooling/pkg/service/monitor"
 	"os"
 	"strings"
 )
@@ -60,7 +60,7 @@ func GetUptimeRobotDomain() string {
 	prefixStr := "/" + AnnotationPrefix
 	envPrefix := getUptimeRobotDomain()
 	if len(envPrefix) == 0 {
-		return "bennsimon.github.io" + prefixStr
+		return "onaio.github.io" + prefixStr
 	}
 	return envPrefix + prefixStr
 }

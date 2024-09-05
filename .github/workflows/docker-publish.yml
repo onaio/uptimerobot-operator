@@ -57,7 +57,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v4
         with:
-          images: bennsimon/uptimerobot-operator
+          images: onaio/uptimerobot-operator
 
       - name: Login to DockerHub
         uses: docker/login-action@v2

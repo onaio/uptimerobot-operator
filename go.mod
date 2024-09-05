@@ -1,9 +1,9 @@
-module github.com/bennsimon/uptimerobot-operator
+module github.com/onaio/uptimerobot-operator
 
 go 1.19
 
 require (
-	github.com/bennsimon/uptimerobot-tooling v0.0.0-20221124193043-367c42529da1
+	github.com/onaio/uptimerobot-tooling v0.0.1
 	github.com/onsi/ginkgo/v2 v2.1.4
 	github.com/onsi/gomega v1.19.0
 	github.com/stretchr/testify v1.7.0

@@ -2,8 +2,8 @@ apiVersion: v2
 name: uptimerobot-operator
 description: uptimerobot operator creates, updates, deletes uptimerobot monitors for a particular ingress resource. It's designed to use friendly_name attribute of a monitor and/or alert contact for unique identification.
 maintainers:
-  - name: bennsimon
-    email: bennsimonotieno@gmail.com
+  - name: onaio
+    email: techops@ona.io
 
 # A chart can be either an 'application' or a 'library' chart.
 #

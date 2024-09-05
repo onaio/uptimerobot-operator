@@ -19,8 +19,8 @@ package controllers
 import (
 	"context"
 	"fmt"
-	"github.com/bennsimon/uptimerobot-operator/util/monitorutil"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/util/httputil"
+	"github.com/onaio/uptimerobot-operator/util/monitorutil"
+	"github.com/onaio/uptimerobot-tooling/pkg/util/httputil"
 	"sigs.k8s.io/controller-runtime/pkg/builder"
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"

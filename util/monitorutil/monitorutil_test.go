@@ -2,8 +2,8 @@ package monitorutil
 
 import (
 	"errors"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/model"
-	"github.com/bennsimon/uptimerobot-tooling/pkg/service"
+	"github.com/onaio/uptimerobot-tooling/pkg/model"
+	"github.com/onaio/uptimerobot-tooling/pkg/service"
 	"github.com/stretchr/testify/mock"
 	"reflect"
 	"testing"

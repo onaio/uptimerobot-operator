@@ -8,13 +8,13 @@ This operator creates, updates, deletes uptimerobot monitors for a particular in
 ## TL;DR
 
 ```bash
-$ helm repo add uptimerobot-operator https://bennsimon.github.io/uptimerobot-operator/
+$ helm repo add uptimerobot-operator https://onaio.github.io/uptimerobot-operator/
 $ helm install uptimerobot-operator uptimerobot-operator/uptimerobot-operator
 ```
 
 ## Introduction
 
-This chart bootstraps  [uptimerobot-operator](https://github.com/bennsimon/uptimerobot-operator) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps  [uptimerobot-operator](https://github.com/onaio/uptimerobot-operator) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ The following table lists the configurable parameters of the Uptimerobot-operato
 | Parameter                                    | Description | Default                                                    |
 |----------------------------------------------|-------------|------------------------------------------------------------|
 | `replicaCount`                               |             | `1`                                                        |
-| `image.repository`                           |             | `"bennsimon/uptimerobot-operator"`                         |
+| `image.repository`                           |             | `"onaio/uptimerobot-operator"`                         |
 | `image.pullPolicy`                           |             | `"IfNotPresent"`                                           |
 | `image.tag`                                  |             | `"v0.1.0"`                                        |
 | `imagePullSecrets`                           |             | `[]`                                                       |
