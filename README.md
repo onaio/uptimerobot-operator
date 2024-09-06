@@ -1,12 +1,12 @@
 # uptimerobot-operator
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![Go](https://github.com/bennsimon/uptimerobot-operator/actions/workflows/go.yaml/badge.svg?branch=main)](https://github.com/bennsimon/uptimerobot-operator/actions/workflows/go.yaml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![Go](https://github.com/onaio/uptimerobot-operator/actions/workflows/go.yaml/badge.svg?branch=main)](https://github.com/onaio/uptimerobot-operator/actions/workflows/go.yaml)
 
 The operator creates, updates, deletes uptimerobot monitors for a particular ingress resource. It's designed to use `friendly_name` parameter of a monitor and/or alert contact for unique identification.
 
 ## Description
 
-The operator uses [uptimerobot-tooling](https://github.com/bennsimon/uptimerobot-tooling) to handle api requests.
+The operator uses [uptimerobot-tooling](https://github.com/onaio/uptimerobot-tooling) to handle api requests.
 
 > The operator will delete the monitor it creates when the ingress resource is deleted.
 
@@ -18,9 +18,9 @@ In addition to the environments supplied on the tooling mentioned above, the ope
 
 | Variable        | Description                                             | Default               |
 |-----------------|---------------------------------------------------------|-----------------------|
-| `DOMAIN_PREFIX` | The domain name to use when specifying the annotations. | `bennsimon.github.io` |
+| `DOMAIN_PREFIX` | The domain name to use when specifying the annotations. | `onaio.github.io` |
 
-With the `DOMAIN_PREFIX` as `bennsimon.github.io` the configurations will be supplied as follows:
+With the `DOMAIN_PREFIX` as `onaio.github.io` the configurations will be supplied as follows:
 
 Example 1
 ```yaml
@@ -29,13 +29,13 @@ kind: Ingress
 metadata:
   name: https-minimal-ingress
   annotations:
-      bennsimon.github.io/uptimerobot-monitor: "true"
-      bennsimon.github.io/uptimerobot-monitor-type: "HTTP"
-      bennsimon.github.io/uptimerobot-monitor-friendly_name: "tester"
-      bennsimon.github.io/uptimerobot-monitor-alert_contacts: "tester opsgenie"
-      bennsimon.github.io/uptimerobot-monitor-interval: "60"
-      bennsimon.github.io/uptimerobot-monitor-timeout: "30"
-      # To use more parameters append valid uptimerobot monitor api parameter from https://uptimerobot.com/api/ to the prefix `bennsimon.github.io/uptimerobot-monitor-`
+      onaio.github.io/uptimerobot-monitor: "true"
+      onaio.github.io/uptimerobot-monitor-type: "HTTP"
+      onaio.github.io/uptimerobot-monitor-friendly_name: "tester"
+      onaio.github.io/uptimerobot-monitor-alert_contacts: "tester opsgenie"
+      onaio.github.io/uptimerobot-monitor-interval: "60"
+      onaio.github.io/uptimerobot-monitor-timeout: "30"
+      # To use more parameters append valid uptimerobot monitor api parameter from https://uptimerobot.com/api/ to the prefix `onaio.github.io/uptimerobot-monitor-`
 spec:
   rules:
     - host: test-domain.localhost
@@ -52,10 +52,10 @@ spec:
 
 The operator reads configurations of the monitor from the annotation on the ingress resource.
 
-**The first annotation entry `bennsimon.github.io/uptimerobot-monitor` enables the ingress resource to be evaluated by the operator. The other annotations supply the parameters of the monitor. The naming convention is:
-`bennsimon.github.io/uptimerobot-monitor-<parameter>`.**
+**The first annotation entry `onaio.github.io/uptimerobot-monitor` enables the ingress resource to be evaluated by the operator. The other annotations supply the parameters of the monitor. The naming convention is:
+`onaio.github.io/uptimerobot-monitor-<parameter>`.**
 
-**To get more parameters refer to the [tooling documentation](https://github.com/bennsimon/uptimerobot-tooling) and uptimerobot api documentation.**
+**To get more parameters refer to the [tooling documentation](https://github.com/onaio/uptimerobot-tooling) and uptimerobot api documentation.**
 
 ## Getting Started
 
@@ -159,7 +159,7 @@ spec:
 #              value: "-"
 #            - name: MONITOR_ALERT_CONTACTS_ATTRIB_DELIMITER
 #              value: "_"
-          image: bennsimon/uptimerobot-operator:v0.1.0
+          image: onaio/uptimerobot-operator:v0.1.0
           name: manager
           securityContext:
             allowPrivilegeEscalation: false
@@ -197,18 +197,18 @@ spec:
 
 ### Running on the cluster
 
-Use the latest tag from [dockerhub](https://hub.docker.com/r/bennsimon/uptimerobot-operator/tags)
+Use the latest tag from [dockerhub](https://hub.docker.com/r/onaio/uptimerobot-operator/tags)
 
 1.  Build and push your image to the location specified by `IMG`:
 
 ```sh
-make docker-build docker-push IMG=bennsimon/uptimerobot-operator:v0.1.0
+make docker-build docker-push IMG=onaio/uptimerobot-operator:v0.1.0
 ```
 
 2.  Deploy the controller to the cluster with the image specified by `IMG`:
 
 ```sh
-make deploy IMG=bennsimon/uptimerobot-operator:v0.1.0
+make deploy IMG=onaio/uptimerobot-operator:v0.1.0
 ```
 
 ### Uninstall CRDs

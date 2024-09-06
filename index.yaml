@@ -9,12 +9,12 @@ entries:
       of a monitor and/or alert contact for unique identification.
     digest: 8db4ff480ea500b014a671d09898ca60f1fceab504d46600810889ff1ea0e988
     maintainers:
-    - email: bennsimonotieno@gmail.com
-      name: bennsimon
+    - email: techops@ona.io
+      name: onaio
     name: uptimerobot-operator
     type: application
     urls:
-    - https://github.com/bennsimon/uptimerobot-operator/releases/download/uptimerobot-operator-0.1.0/uptimerobot-operator-0.1.0.tgz
+    - https://github.com/onaio/uptimerobot-operator/releases/download/uptimerobot-operator-0.1.0/uptimerobot-operator-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: v0.0.2
@@ -24,12 +24,12 @@ entries:
       of a monitor and/or alert contact for unique identification.
     digest: 1eb51a4017edf527586e8787b0aeb2e7f2b8aa6eff15d48cfd4b29215b4e8bfd
     maintainers:
-    - email: bennsimonotieno@gmail.com
-      name: bennsimon
+    - email: techops@ona.io
+      name: onaio
     name: uptimerobot-operator
     type: application
     urls:
-    - https://github.com/bennsimon/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.3/uptimerobot-operator-0.0.3.tgz
+    - https://github.com/onaio/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.3/uptimerobot-operator-0.0.3.tgz
     version: 0.0.3
   - apiVersion: v2
     appVersion: v0.0.1-alpha-r1
@@ -39,12 +39,12 @@ entries:
       of a monitor and/or alert contact for unique identification.
     digest: ecd2b74a79d37cd9ea10feb340444a0c5d6dc8b8e773634950dfe6b588ac673a
     maintainers:
-    - email: bennsimonotieno@gmail.com
-      name: bennsimon
+    - email: techops@ona.io
+      name: onaio
     name: uptimerobot-operator
     type: application
     urls:
-    - https://github.com/bennsimon/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.2/uptimerobot-operator-0.0.2.tgz
+    - https://github.com/onaio/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.2/uptimerobot-operator-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v2
     appVersion: v0.0.1-alpha-r1
@@ -54,11 +54,11 @@ entries:
       of a monitor and/or alert contact for unique identification.
     digest: 3f9eac1079394d3f462481f1ff8dbe90fa19391104e8806e5e81898bf39ea2d3
     maintainers:
-    - email: bennsimonotieno@gmail.com
-      name: bennsimon
+    - email: techops@ona.io
+      name: onaio
     name: uptimerobot-operator
     type: application
     urls:
-    - https://github.com/bennsimon/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.1/uptimerobot-operator-0.0.1.tgz
+    - https://github.com/onaio/uptimerobot-operator/releases/download/uptimerobot-operator-0.0.1/uptimerobot-operator-0.0.1.tgz
     version: 0.0.1
 generated: "2023-01-16T13:33:20.495260051Z"
