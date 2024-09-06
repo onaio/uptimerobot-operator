@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  uptimerobot-operator:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2024-09-06T13:06:28.50046611Z"
+    description: uptimerobot operator creates, updates, deletes uptimerobot monitors
+      for a particular ingress resource. It's designed to use friendly_name attribute
+      of a monitor and/or alert contact for unique identification.
+    digest: 9e5b3909c03dd0f4f95aefc8e1b65ccfa43ad2d849ace7c74193d42ba7c04073
+    maintainers:
+    - email: techops@ona.io
+      name: onaio
+    name: uptimerobot-operator
+    type: application
+    urls:
+    - https://github.com/onaio/uptimerobot-operator/releases/download/uptimerobot-operator-0.1.0/uptimerobot-operator-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-09-06T13:06:28.500472181Z"
